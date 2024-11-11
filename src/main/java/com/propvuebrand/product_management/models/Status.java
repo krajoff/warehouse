@@ -8,9 +8,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum Status {
 
-    STATUS_SELLABLE("SELLABLE"),
-    STATUS_UNFULFILLABLE("UNFULFILLABLE"),
-    STATUS_INBOUND("INBOUND");
+    Sellable("Status_Sellable"),
+    Unfulfillable("Status_Unfulfillable"),
+    Inbound("Status_Inbound");
 
     private final String status;
 
