@@ -4,6 +4,7 @@ import com.propvuebrand.product_management.models.Product;
 import com.propvuebrand.product_management.models.Status;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -11,6 +12,8 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByStatusIgnoreCase(Status status);
+    @Query("SELECT p FROM Product p WHERE LOWER(p.status) = LOWER(:status)")
+    List<Product> findByStatusIgnoreCase(@Param("status") String status);
 
     @Query("SELECT SUM(p.value * p.quantity) FROM Product p WHERE p.status = 'Sellable'")
     Double getTotalValueForSellableProducts();
