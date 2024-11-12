@@ -50,6 +50,7 @@ Swagger-документация доступна по адресу:
 ```http
   http://localhost:8080/swagger-ui.html
 ```
+- doc/ — сгенерированная документация Javadoc.
 
 ## PGAdmin
 ```http
