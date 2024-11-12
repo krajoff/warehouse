@@ -1,0 +1,7 @@
+com.propvuebrand.product_management
+com.propvuebrand.product_management.configs
+com.propvuebrand.product_management.controllers
+com.propvuebrand.product_management.exceptions
+com.propvuebrand.product_management.models
+com.propvuebrand.product_management.repositories
+com.propvuebrand.product_management.services

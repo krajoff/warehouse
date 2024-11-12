@@ -13,8 +13,18 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 
+/**
+ * Конфигурационный класс для настройки документации Swagger OpenAPI.
+ */
 @Configuration
 public class DocConfig {
+
+    /**
+     * Настройка группировки API для продуктов.
+     *
+     * @return конфигурация группировки API, включающая все эндпоинты,
+     * соответствующие пути `/products/**`
+     */
     @Bean
     public GroupedOpenApi publicProductApi() {
         return GroupedOpenApi.builder()
@@ -23,6 +33,13 @@ public class DocConfig {
                 .build();
     }
 
+    /**
+     * Настройка общей информации об API.
+     *
+     * @param appDescription описание приложения
+     * @param appVersion версия приложения
+     * @return объект OpenAPI с настройками информации об API, лицензии и серверов
+     */
     @Bean
     public OpenAPI customOpenApi(@Value("Product management")String appDescription,
                                  @Value("0.0.1")String appVersion) {

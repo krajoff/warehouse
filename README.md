@@ -60,8 +60,8 @@ Swagger-документация доступна по адресу:
 
 CRUD операции для продуктов
 
-- GET /api/products - получить список всех продуктов.
-- POST /api/products - добавить новый продукт:
+- GET /api/v1/products - получить список всех продуктов.
+- POST /api/v1/products - добавить новый продукт:
 ```json
 {
   "productId": "p1",
@@ -72,7 +72,7 @@ CRUD операции для продуктов
 }
 ```
 
-- PUT /api/products/{id} - обновить продукт по ID:
+- PUT /api/v1/products/{id} - обновить продукт по ID:
 ```json
 {
   "productId": "p1",
@@ -83,9 +83,9 @@ CRUD операции для продуктов
 }
 ```
 
-- DELETE /api/products/{id} - удалить продукт по ID.
-- GET /api/products/status/{status} - получить продукты по статусу (Sellable, Unfulfillable, Inbound). Пример:
-  /api/products/status/Sellable
-- GET /api/products/total-value/sellable - получить общее значение (value) всех продуктов со статусом "Sellable".
-- GET /api/products/total-value/center/{center} - получить общее значение (value) всех продуктов для конкретного
-  Fulfillment Center (Пример, /api/products/total-value/center/fc1)
+- DELETE /api/v1/products/{id} - удалить продукт по ID.
+- GET /api/v1/products/status/{status} - получить продукты по статусу (Sellable, Unfulfillable, Inbound). Пример:
+  /api/v1/products/status/Sellable
+- GET /api/v1/products/sellable/value - получить общую стоимость всех продуктов со статусом "Sellable".
+- GET /api/v1/products/center/{fulfillmentCenter}/value - получить общую стоимость всех продуктов для конкретного
+  центра (Пример, /api/v1/products/center/fc1/value)
