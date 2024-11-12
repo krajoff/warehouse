@@ -37,7 +37,7 @@ PGADMIN_DEFAULT_PASSWORD = admin
 PGADMIN_PORT = 5050
 ```
 
-Запускаем docker-контейнеры:
+Запускаем docker-контейнеры, исходные данные представлены в init.sql и будут добавлены автоматически:
 
 ```bash
   docker-compose up 

@@ -2810,3 +2810,37 @@ Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
 2024-11-12 10:13:12 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.propvuebrand.product_management.controllers.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
 2024-11-12 10:20:41 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.propvuebrand.product_management.controllers.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
 2024-11-12 10:20:51 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.propvuebrand.product_management.controllers.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-12 10:21:23 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.propvuebrand.product_management.controllers.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-12 10:21:34 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-12 10:21:34 INFO  c.p.p.ProductManagementApplication - Starting ProductManagementApplication using Java 17.0.7 with PID 10320 (D:\JAVA\product-management\build\classes\java\main started by Fastec in D:\JAVA\product-management)
+2024-11-12 10:21:34 INFO  c.p.p.ProductManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-12 10:21:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-12 10:21:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-12 10:21:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 10:21:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-11-12 10:21:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-12 10:21:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-12 10:21:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-12 10:21:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-12 10:21:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-12 10:21:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2857 ms
+2024-11-12 10:21:38 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 10:21:38 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-12 10:21:38 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-12 10:21:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-12 10:21:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-12 10:21:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54fd7950
+2024-11-12 10:21:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-12 10:21:40 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-12 10:21:40 DEBUG n.t.d.l.l.SLF4JQueryLoggingListener - 
+Name:dataSource, Connection:2, Time:17, Success:True
+Type:Prepared, Batch:False, QuerySize:1, BatchSize:0
+Query:["select * from information_schema.sequences"]
+Params:[()]
+2024-11-12 10:21:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 10:21:41 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-12 10:21:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 10:21:43 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-11-12 10:21:43 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-12 10:21:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-12 10:21:43 INFO  c.p.p.ProductManagementApplication - Started ProductManagementApplication in 9.685 seconds (process running for 10.598)
